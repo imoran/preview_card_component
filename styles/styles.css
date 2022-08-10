@@ -1,0 +1,78 @@
+body, html {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    background-color: var(--primary-cream);
+}
+
+:root {
+    --primary-cream: hsl(30, 38%, 92%);
+    --primary-dark-cyan: hsl(158, 36%, 37%);
+    --neutral-dark-blue: hsl(212, 21%, 14%);
+    --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+    --neutral-white: hsl(0, 0%, 100%);
+
+}
+
+.preview-card {
+    width: 90vw;
+    margin: 1rem auto;
+    border-radius: .75rem;
+    overflow: hidden;
+}
+
+.preview-card__details {
+    padding: 1.75rem;
+    background-color: var(--neutral-white);
+}
+
+.preview-card__category {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    color: var(--neutral-dark-grayish-blue);
+}
+
+.preview-card__title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 1rem 0;
+}
+
+.preview-card__description {
+    color: var(--neutral-dark-grayish-blue);
+    line-height: 1.60rem;
+    font-size: 1rem;
+}
+
+.preview-card__add_cart_btn {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-dark-cyan);
+    color: white;
+    border: none;
+    padding: .75rem;
+    border-radius: .3rem;
+}
+
+.preview-card__prices {
+    height: 3rem;
+    margin: 1.25rem 0;
+}
+
+.preview-card__curr-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-dark-cyan);
+    vertical-align: middle;
+}
+
+.preview-card__prev-price {
+    color: var(--neutral-dark-grayish-blue);
+    text-decoration: line-through;
+    vertical-align: middle;
+    padding: 1rem;
+}
