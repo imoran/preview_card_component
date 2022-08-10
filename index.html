@@ -5,30 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Lato:wght@300;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Product Preview Card Component</title>
 </head>
 <body>
-  <h3>Perfume</h3>
-  <h2>Gabrielle Essence Eau De Parfum</h2>
+  <div class="preview-card">    
+    <div class="preview-card__image">
+      <picture>
+        <source
+          media="(orientation: portrait)"
+          srcset="images/image-product-mobile.jpg"
+        >
+        <source
+          media="(orientation: landscape)"
+          srcset="images/image-product-desktop.jpg"
+        >
+        <img src="images/image-product-desktop.jpg">
+      </picture>
+    </div>
 
-  <picture>
-    <source
-      media="(orientation: portrait)"
-      srcset="images/image-product-mobile.jpg"
-    >
-    <source
-      media="(orientation: landscape)"
-      srcset="images/image-product-desktop.jpg"
-    >
-    <img src="images/image-product-desktop.jpg">
-  </picture>
-  <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-    Perfumer-Creator for the House of CHANEL.</p>
+    <div class="preview-card__details">
+      <p class="preview-card__category">Perfume</p>
+      <p class="preview-card__title">Gabrielle Essence Eau De Parfum</p>
+  
+      <p class="preview-card__description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+    
+      <div class="preview-card__payment-details">
+        <div class="preview-card__prices">
+          <span class="preview-card__curr-price">$149.99</span>
+          <span class="preview-card__prev-price">$169.99</span>
+        </div>
 
-  <span">$149.99</span>
-  <span>$169.99</span>
-
-  <button>Add to Cart</button>
+        <button class="preview-card__add_cart_btn">Add to Cart</button> 
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
