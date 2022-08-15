@@ -18,14 +18,14 @@
     <div class="preview-card__image">
       <picture>
         <source
-          media="(orientation: portrait)"
+          media="(orientation: portrait) and (orientation: landscape) "
           srcset="images/image-product-mobile.jpg"
         >
         <source
-          media="(orientation: landscape)"
+          media="(min-width: 961px)"
           srcset="images/image-product-desktop.jpg"
         >
-        <img src="images/image-product-desktop.jpg">
+        <img src="images/image-product-mobile.jpg">
       </picture>
     </div>
     <div class="preview-card__details">
