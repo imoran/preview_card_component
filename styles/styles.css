@@ -95,9 +95,95 @@ body, html {
     }
 } 
 
-@media only screen and (min-width: 1024px)  {
-    .preview-card {
-        width: 55vw;
-        margin: 0;
+@media only screen 
+  and (max-device-width: 280px)
+  and (orientation: portrait) {
+    .preview-card__curr-price {
+        font-size: 1.5rem;
     }
 }
+
+
+@media only screen 
+  and (max-device-width: 1023px)
+  and (orientation: landscape) {
+    .preview-card {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: initial;
+        flex-direction: column;
+        margin: 4rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (min-device-width: 1024px)
+  and (orientation: landscape) {
+    .preview-card {
+        width: 62vw;
+    }
+    
+    .preview-card__title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .preview-card__description {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .preview-card__prices {
+        height: 5rem;
+    }
+
+    .preview-card__curr-price {
+        font-size: 3rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px)
+  and (orientation: portrait) {
+    .preview-card {
+        width: 61vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: inherit;
+    }
+}
+
+@media screen
+    and (min-device-width: 1390px) 
+    and (max-device-height: 1310px) {
+    .preview-card {
+        width: 40vw;
+    }
+
+    .preview-card__title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .preview-card__description {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .preview-card__prices {
+        height: 5rem;
+    }
+
+    .preview-card__curr-price {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-device-width: 2024px) {
+    .preview-card {
+        width: 31vw;
+    }
+}  
