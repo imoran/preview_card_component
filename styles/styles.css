@@ -160,7 +160,7 @@ body, html {
     and (min-device-width: 1390px) 
     and (max-device-height: 1310px) {
     .preview-card {
-        width: 40vw;
+        width: 42vw;
     }
 
     .preview-card__title {
